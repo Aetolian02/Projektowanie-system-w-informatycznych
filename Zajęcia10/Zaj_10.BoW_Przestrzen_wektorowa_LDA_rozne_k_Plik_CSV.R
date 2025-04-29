@@ -187,17 +187,7 @@ corpus <- tm_map(corpus, stripWhitespace)
 corpus[[1]][[1]]
 
 # usunięcie ewt. zbędnych nazw własnych
-corpus <- tm_map(corpus, removeWords, c("rose", "roses", "kate", "kates", "iris", "tyler", "tylers", 
-                                         "javi", "javis", "reed", "josh", "joshs", "elliot", "elliots", 
-                                         "julian", "julians", "patrick", "patricks", "margot", "margots", "one", "however", "ladybug", 
-                                         "emily", "emilys", "matt", "matts", "steve", "steves", "chuck", "chucks",
-                                         "joel", "joels", "mckenna", "gabriel", "gabriels", "erin", "erins",
-                                         "dane", "danes", "george", "georges", "marshall", "marshalls",
-                                         "cliff", "cliffs", "sathyamurthys", "robert", "roberts", "elsa", "elsas", "laura", "lauras", "ray", "rays",
-                                         "throw", "alex", "alexs", "angela", "angelas", "garrett", "garrets",
-                                         "sam", "sams", "michael", "michaels", "soren", "sorens", "deepika", "sergey", "sergeys", "bullock", "bullocks",
-                                         "felicity", "felicitys", "victoria", "victorias", "madeline", "madelines", "andrew", "andrews",
-                                         "hendrix", "hendrixs", "powell", "glenn", "glenns", "naritawarsaw", "warsawtokyowarsaw"
+corpus <- tm_map(corpus, removeWords, c("budapest", "ihr", "ife", "time", "radom", "waw", "lingus", "igi", "even", "airline", "one", "'ve", "th", "rd", "warsaw", "lot", "flight", "via", "service", "airlines", "naritawarsaw", "warsawtokyowarsaw", "polish", "aircraft"
                                          ))
 
 corpus <- tm_map(corpus, stripWhitespace)
